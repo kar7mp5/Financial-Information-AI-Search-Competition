@@ -1,0 +1,17 @@
+langchain
+langchain_community
+
+huggingface_hub
+
+pandas
+scikit-learn
+ollama
+
+transformers
+numpy
+pandas
+
+trl 
+bitsandbytes
+torch
+tensorboard
