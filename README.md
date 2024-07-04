@@ -12,7 +12,8 @@
 
 ### [**4. LLM model**](#4-llm-model)
 [**4-1. About the model**](#4-1-about-the-model)  
-[**4-2. Install the model**](#4-2-install-the-model-not-used)
+[**4-2. Install the model**](#4-2-install-the-model-not-used)  
+[**4-3. Way to use the trained model**](#4-3-way-to-use-the-trained-model)
 
 ### [**5. Train history**](#5-train-history)
 [**2024.07.03.**](#20240703)
@@ -58,17 +59,16 @@ id,context,question,answer # HEADER
 ### **4-1. About the model**
 - [~~llama3 8B~~](https://ollama.com/library/llama3:8b)  (Not Used!)  
 - [~~EEVE-Korean-Instruct-10.8B-v1.0-GGUF~~](https://huggingface.co/heegyu/EEVE-Korean-Instruct-10.8B-v1.0-GGUF/tree/main) (Not Used!)
-- **beomi/Llama-3-Open-Ko-8B**
+- **beomi/Llama-3-Open-Ko-8B** --> **fine-tuning**
 
-### ~~**4-2. Install the model (Not Used!)**~~
-- **Run the llama3**
-```console
-$ ollama run llama3
-```
 
-- **Run the EEVE-Korean-Instruct-10.8B-v1.0-GGUF**
-```console
-$ ollama run kollama3
+### **4-3. Way to use the trained model**
+Change the `model_id` to your fine-tuned model.
+```python
+# load the model.
+model_id = "./models/20240703" # <-- CHANGE HERE TO YOUR MODEL PATH
+model = AutoModelForCausalLM.from_pretrained(model_id,
+                                            torch_dtype="auto", load_in_4bit=True)
 ```
 
 ## **5. Train history**
