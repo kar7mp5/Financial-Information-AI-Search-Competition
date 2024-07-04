@@ -34,8 +34,8 @@
 ├── models/                     # Fine-tuned model's in here.
 │
 ├── baseline.ipynb              # Reserved base code from the DACON contest.
-├── finetuning.ipynb            # Main code that use in the contest.
-└── langchain_test.ipynb        # Langchain test code.
+├── main.ipynb                  # Main code that convert test.csv to submission.csv
+└── train.ipynb                 # Fine-tuning the model.
 ```
 
 
