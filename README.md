@@ -63,7 +63,7 @@ id,context,question,answer # HEADER
 
 
 ### **4-3. Way to use the trained model**
-Change the `model_id` to your fine-tuned model.
+Change the `model_id` to your fine-tuned model's path.
 ```python
 # load the model.
 model_id = "./models/20240703" # <-- CHANGE HERE TO YOUR MODEL PATH
