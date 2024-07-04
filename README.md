@@ -40,6 +40,7 @@
 
 
 ## **2. Install libraries**
+The standard of the python version is 3.10.12
 ```console
 $ pip3 install -r requirements.txt
 ```
